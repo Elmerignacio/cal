@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: url(800397-planet-wallpaper-1920x1080-1920x1080-for-lockscreen.jpg);
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.calculator {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.calculator input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em; /* Adjust font size */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.calculator button {
+    padding: 20px;
+    font-size: 1.5em; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.calculator button:hover {
+    background: red;
+    color: white;
+}
+.calculator button.sub{
+    background: red;
+    color: white;
+    width: 428%;
+
+
+}
+
+.calculator button:active {
+    background-color: #aaa;
+}
+
+.calculator button.operator,
+.calculator button.operators,
+.calculator button.C {
+    background-color: red;
+    color: white;
+}
+
+.calculator button.operator:hover,
+.calculator button.operators:hover,
+.calculator button.C:hover {
+    background: #ccc;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .calculator {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .calculator input[type="text"] {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .calculator button {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
